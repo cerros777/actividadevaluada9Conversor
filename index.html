@@ -9,28 +9,28 @@
     <link rel="stylesheet" href="assets/css/conversor.css">
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
-    <div class="container"><h3>Conversor App</h3></div>
-        <div class="container p-4" id="conversor">
-            <div class="row m-1 mb-4 p-2 g-2">
-                <div class="col-3 fw-bold">Dolares: </div>
-                <input type="number" class="col-9 border-success" min="0" id="monto">
+<body class="bg d-flex justify-content-center align-items-center vh-100">
+    <div class="container bg-white p-5 rounded shadow-sm">
+        <h1 class="text-center mb-4">Conversor</h1>
+        <form>
+            <div class="mb-3 input-group input-group-lg">
+                <label for="monto" class="input-group-text w-25">Dólares:</label>
+                <input aria-describedby="inputGroup-sizing-lg" type="currency" class="form-control" id="monto" name="monto">
             </div>
-        <div class="border-3 border-bottom border-dark border-opacity-75"></div>
-            <div class="mt-4">
-                <div id="boton">
-                    <button class="btn btn-primary" id="convertir">Convertir</button>
-                </div>
-                <div class="row resultados">
-                    <div class="col-3 fw-bold" >Bitcoin:</div>
-                    <input class="col-9 border-warning" id="toBit" readonly>
-                </div>
-                <div class="row resultados">
-                    <div class="col-3 fw-bold">Colones:</div>
-                    <input class="col-9 border-info" id="toCol" readonly></input>
-                </div>
+            <div class="mb-3 input-group input-group-lg">
+                <label for="toBit" class="input-group-text w-25">Bitcoin:</label>
+                <input type="number" class="form-control" id="toBit" name="toBit" step="0.0000001" aria-describedby="inputGroup-sizing-lg">
             </div>
-        </div>
+            <div class="mb-3 input-group input-group-lg">
+                <label for="toCol" class="input-group-text w-25">Colones:</label>
+                <input type="number" class="form-control" id="toCol" name="toCol" aria-describedby="inputGroup-sizing-lg">
+            </div>
+        </form>
+    </div>
+
+    </div>
+
+
 </body>
 </html>
 <script src="assets/js/conversor.js"></script>

@@ -32,7 +32,8 @@ function convierteDesdeBtc() {
     const btcAmount = parseFloat(toBit.value);
     const dollars = btcAmount * btcRate;
     monto.value = dollars.toLocaleString('en-US');
-    toCol.value = (dollars * 8.75).toFixed(2);
+    toCol.value = (dollars * 8.75).toLocaleString('en-US')
+    console.log(toCol.value);
 }
 
 function convierteDesdeColones() {

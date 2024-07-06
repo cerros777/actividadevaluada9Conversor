@@ -31,7 +31,7 @@ function convierteDesdeBtc() {
     }
     const btcAmount = parseFloat(toBit.value);
     const dollars = btcAmount * btcRate;
-    monto.value = dollars.toFixed(2);
+    monto.value = dollars.toLocaleString('en-US');
     toCol.value = (dollars * 8.75).toFixed(2);
 }
 
@@ -42,6 +42,6 @@ function convierteDesdeColones() {
     }
     const colAmount = parseFloat(toCol.value);
     const dollars = colAmount / 8.75;
-    monto.value = dollars.toFixed(2);
+    monto.value = dollars.toLocaleString('en-US');
     toBit.value = (dollars / btcRate).toFixed(7);
 }

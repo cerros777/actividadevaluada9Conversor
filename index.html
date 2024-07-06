@@ -10,27 +10,29 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 </head>
 <body class="bg d-flex justify-content-center align-items-center vh-100">
-    <div class="container bg-white p-5 rounded shadow-sm">
+    <div class="container bg-white p-4 rounded shadow-sm">
         <h1 class="text-center mb-4">Conversor</h1>
         <form>
-            <div class="mb-3 input-group input-group-lg">
-                <label for="monto" class="input-group-text w-25">Dólares:</label>
-                <input aria-describedby="inputGroup-sizing-lg" type="currency" class="form-control" id="monto" name="monto">
+            <div class="mb-3 row">
+                <label for="monto" class="col-sm-3 col-form-label">Dólar Estadounidense:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control form-control-lg" id="monto" name="monto">
+                </div>
             </div>
-            <div class="mb-3 input-group input-group-lg">
-                <label for="toBit" class="input-group-text w-25">Bitcoin:</label>
-                <input type="number" class="form-control" id="toBit" name="toBit" step="0.0000001" aria-describedby="inputGroup-sizing-lg">
+            <div class="mb-3 row">
+                <label for="toBit" class="col-sm-3 col-form-label">Bitcoin BTC:</label>
+                <div class="col-sm-9">
+                    <input type="number" class="form-control form-control-lg" id="toBit" name="toBit" step="0.0000001">
+                </div>
             </div>
-            <div class="mb-3 input-group input-group-lg">
-                <label for="toCol" class="input-group-text w-25">Colones:</label>
-                <input type="number" class="form-control" id="toCol" name="toCol" aria-describedby="inputGroup-sizing-lg">
+            <div class="mb-3 row">
+                <label for="toCol" class="col-sm-3 col-form-label">Colón salvadoreño:</label>
+                <div class="col-sm-9">
+                    <input type="number" class="form-control form-control-lg" id="toCol" name="toCol">
+                </div>
             </div>
         </form>
     </div>
-
-    </div>
-
-
+    <script src="assets/js/conversor.js"></script>
 </body>
 </html>
-<script src="assets/js/conversor.js"></script>
